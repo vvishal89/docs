@@ -1,0 +1,26 @@
+= Getting Started V2.0
+:description: Learn how to install the Elasticsearch Connector.
+
+[abstract]
+A brief overview of the various ways to run the Couchbase Elasticsearch Connector, followed by step-by-step instructions for installing the connector in solo/distributed mode.
+
+
+== Operational Modes
+
+The connector can be deployed in different modes depending on the requirements of your project.
+
+=== Solo
+
+In the simplest mode, the connector runs as a single standalone Java process.
+This is referred to as "solo" mode.
+Solo mode is appropriate for experimentation and low-traffic environments.
+
+If this is your first time working with the connector, we recommend starting with solo mode.
+
+=== Distributed
+
+If a single connector process cannot handle all of your traffic, multiple connector processes can be deployed in "distributed" mode.
+In this mode each process is manually configured to handle only a subset of the replication workload.
+Distributed mode can scale to handle high volumes of traffic, but is inflexible; adding an additional process to a distributed connector group requires stopping and reconfiguring _all_ of the processes in the group.
+
+NOTE: Solo mode is effectively the same as distributed mode with a group size of 1.
