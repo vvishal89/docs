@@ -1,0 +1,7 @@
+= Introduction - V1.0
+
+Limka is a framework (a packaged solution) that makes it easy for scientists and engineers to build, manage, package, 
+and deploy machine learning models at scale.
+
+[small]_Limka is aimed at addressing these problems by standardizing and simplifying the life cycle management of 
+machine learning models at scale, which enable their reuse and shorten time to production._
